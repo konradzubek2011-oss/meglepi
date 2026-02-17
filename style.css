@@ -1,0 +1,56 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+
+}
+body{
+    text-align: center;
+}
+    
+#nem, #igen{
+    display: inline-block;
+    margin: 0.5rem;
+    vertical-align: middle;
+    background-color:blueviolet;
+}
+body{
+    background-color: #973232ab;
+    font-family: Arial, sans-serif;
+}
+#kep1, #kep2, #kep3{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+/* Gallery: horizontal row on small screens */
+.gallery{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.5rem 1rem;
+}
+
+.gallery img{
+    flex: 0 0 auto;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0;
+}
+
+/* Larger images on wider screens */
+@media (min-width: 700px){
+    .gallery img{
+        width: 200px;
+        height: 200px;
+    }
+}
